@@ -1,0 +1,507 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'BenguiatGot Bk BT', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style-type: none;
+}
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+.header-nav-wrap {
+    font-family: "BenguiatGot Bk BT", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    position: absolute;
+    top: 9px;
+    right: 50px;
+}
+
+.header-nav {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    height: 72px;
+}
+
+.header-nav li {
+    display: inline-block;
+    padding-left: 0;
+    margin-right: 2rem;
+}
+
+.header-nav li a {
+    display: block;
+    line-height: 72px;
+    color: #FFFFFF;
+}
+
+.header-nav li.current a {
+    font-family: "BenguiatGot Bk BT", sans-serif;
+    color: #af2b2b;
+}
+
+#welcome {
+    height: 100vh;
+    background: url('https://res.cloudinary.com/dunte007/image/upload/v1567498357/IMG_20190814_104916_b21y1p.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 183, 255);
+    justify-content: center;
+}
+
+#welcome .name-plate {
+    width: 70%;
+    height: 50%;
+    text-align: start;
+    margin-top: 200px;
+    padding-left: 20px;
+}
+
+.name-plate h1 {
+    font-size: 6em;
+    font-weight: 160;
+    line-height: 1em;
+    margin-bottom: 10px;
+    padding: -5px;
+}
+
+.name-plate ul li {
+    width: 80%;
+    font-size: 5px;
+}
+
+#skills,
+#hobbies,
+#education,
+#contact {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#skills {
+    background-image:
+        url(img/3.png);
+    background-color: rgba(85, 79, 85, 0.986);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+#skills h1 {
+    font-size: 4em;
+    font-weight: 100;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+#skills ul {
+    margin-top: 10px;
+    font-size: 30px;
+}
+.s-about {
+    padding-top: 15rem;
+    padding-bottom: 22rem;
+    background-color: rgb(223, 215, 215);
+    position: relative;
+    
+}
+
+.about-content {
+    margin-bottom: 20em;
+}
+.about-content {
+    margin-top: 40em;
+}
+.about-content .left {
+    padding-right: 40px;
+}
+
+.about-content .right {
+    padding-left: 40px;
+}
+.timeline {
+    position: relative;
+    text-align: left;
+    margin-top: 3.6rem;
+}
+
+.timeline::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 53%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 2rem;
+    top: 0;
+    
+}
+
+.timeline__block {
+    position: relative;
+    padding-left: 8rem;
+    min-height: 28.8rem;
+}
+
+.timeline__bullet {
+    background: #0D0A0B;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    margin-left: -0.75rem;
+    box-shadow: 0 0 0 9px #E9E9E9;
+    position: absolute;
+    left: 2rem;
+    top: .3rem;
+}
+
+.timeline__header .timeline__timeframe {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: .9rem;
+    font-family: "montserrat-bold", sans-serif;
+}
+
+.timeline__header h3 {
+    line-height: 1.25;
+    margin: 0 0 .3rem 0;
+}
+#education {
+    background-image: url(img/4.png);
+    background-color: rgba(218, 185, 185, 0.986);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#education h1 {
+    font-size: 4em;
+    font-weight: 100;
+    line-height: 1em;
+    margin-bottom: 10px;
+
+}
+#hobbies {
+    background-image:
+        url(img/5.png);
+    background-color: rgba(29, 28, 29, 0.986);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#hobbies h1 {
+    font-size: 4em;
+    font-weight: 100;
+    line-height: 1em;
+    margin-bottom: 10px;
+
+}
+
+#hobbies ul {
+    margin-top: 10px;
+    font-size: 30px;
+}
+#contact {
+    background-image: url(img/2.jpg);
+    background-color: rgba(29, 28, 29, 0.986);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin-bottom: 0px;
+}
+
+#contact h1 {
+    font-size: 4em;
+    font-weight: 100;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+#contact ul {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+#contact div a {
+    text-decoration: none;
+    color: rgb(231, 222, 222);
+    transition: font-size .3s linear;
+    padding-left: 10px;
+}
+
+#contact div a:hover {
+    color: rgb(165, 105, 105);
+    font-size: 20px;
+    transition: font-size .4s linear;
+}
+
+#contact ul div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+footer {
+    background: #000;
+    color: white;
+    font-weight: 200;
+    font-size: 1.5em;
+    text-align: left;
+}
+@media (max-width: 200px) {
+    #welcome .name-plate {
+        width: 70%;
+        height: 50%;
+        text-align: start;
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+    .name-plate h1 {
+        font-size: 1em;
+        font-weight: 50;
+        line-height: 1em;
+        padding: -5px;
+    }
+    #skills h1,
+    #education h1,
+    #hobbies h1,
+    #contact h1 {
+        font-size: 3em;
+        font-weight: 100;
+        line-height: 1em;
+        margin-bottom: 10px;
+    }
+    #skills ul,
+    #education ul,
+    #hobbies ul,
+    #contact ul {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    #contact div a {
+        text-decoration: none;
+        color: rgb(231, 222, 222);
+        transition: font-size .3s linear;
+        padding-left: 10px;
+    }
+
+    #contact div a:hover {
+        color: rgb(165, 105, 105);
+        transition: font-size .3s linear;
+    }
+}
+    .contact-modal{
+    height: 100vh;
+    width: 100%;
+    font-family:"BenguiatGot Bk BT", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:rgb(51, 51, 51);
+    background:rgb(80, 94, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity .3s linear;
+    position: fixed;
+    top: 0;
+}
+.hide-modal{
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+    cursor: none;
+    transition: opacity .3s linear;
+  
+}
+
+.container {
+	max-width:350px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+#contact-form input[type="text"], 
+#contact-form input[type="email"],
+ #contact-form input[type="tel"], 
+ #contact-form textarea, 
+ #contact-submit{
+     font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+#contact-form {
+	background:#F9F9F9;
+	padding:25px;
+    margin:50px 0;
+    position: relative;
+}
+
+#contact-form h3 {
+	color: rgb(0, 68, 255);
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact-form h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+    width: 100%;
+    position: relative;
+
+}
+
+#contact-form input[type="text"], 
+#contact-form input[type="email"], 
+#contact-form input[type="tel"], 
+#contact-form input[type="url"], 
+#contact-form textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+
+#contact-form textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+#contact-submit {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+#contact-submit:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact-submit:active { 
+    box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+#contact-form input[type="text"], 
+#contact-form input[type="email"], 
+#contact-form input[type="tel"]{
+    padding-top: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background:none;
+}
+
+label{
+    position: absolute;
+    top: -2px;
+    transform: translateY(18px);
+    transition: transform .3s linear;
+}
+#contact-form input[type="text"]:focus ~ label, 
+#contact-form input[type="email"]:focus ~ label, 
+#contact-form input[type="tel"]:focus ~ label{
+    transform: translateY(0);
+    transition: transform .3s linear;
+}
+#contact-form input[type="text"]:valid ~ label, 
+#contact-form input[type="email"]:valid ~ label, 
+#contact-form input[type="tel"]:valid ~ label{
+    transform: translateY(0);
+    transition: transform .3s linear;
+}
+#close-btn{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 26px;
+    color: rgb(255, 0, 255);
+    padding: 5px;
+    font-weight: 600;
+    transition: font-size .2s linear;
+    cursor: pointer;
+    user-select: none;
+}
+#close-btn:hover{
+    transition: font-size .2s linear;
+    font-size: 29px;
+}
+#close-btn:active{
+    color: green;
+}
+.contact-modal-open-btn{
+    position: fixed;
+    bottom: 0;
+    left: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: rgb(0, 174, 255);
+    font-size: 12px;
+    cursor: pointer;
+    color: #fffffffb;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.24), -1px -1px 5px rgba(0, 0, 0, 0.24);
+}
+
