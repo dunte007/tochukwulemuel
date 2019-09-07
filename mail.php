@@ -1,9 +1,3 @@
-rmvalidator.addValidation("email","req","Please provide your email");
-frmvalidator.addValidation("email","email",
-  "Please enter a valid email address");
-</script>
-PHP:
-
 <?php
 $errors = '';
 $myemail = 'dunte007@gmail.com';//<-----Put Your email address here.
