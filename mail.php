@@ -1,33 +1,16 @@
 <?php
-$errors = '';
-$myemail = 'dunte007@gmail.com';//<-----Put Your email address here.
-if(empty($_POST['name'])  ||
-   empty($_POST['email']) ||
-   empty($_POST['Tel']) ||
-   empty($_POST['message']))
-{
-    $errors .= "\n Error: all fields are required";
-}
-$name = $_POST['name'];
-$email_address = $_POST['email'];
-$message = $_POST['message'];
-if (!preg_match(
-"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
-$email_address))
-{
-    $errors .= "\n Error: Invalid email address";
-}
+if(!empty($_POST["send"])) {
+	$name = $_POST["userName"];
+	$email = $_POST["userEmail"];
+	$tel = $_POST["tel"];
+	$message = $_POST["message"];
 
-if( empty($errors))
-{
-$to = $myemail;
-$email_subject = "Contact form submission: $name";
-$email_body = "You have received a new message. ".
-" Here are the details:\n Name: $name \n ".
-"Email: $email_address\n Message \n $message";
-$headers = "From: $myemail\n";
-$headers .= "Reply-To: $email_address";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Thank You!";
+	$toEmail = "dunte007@gmail.com";
+	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
+	if(mail($toEmail, $subject, $content, $mailHeaders)) {
+	    $message = "Your contact information is received successfully.";
+	    $type = "success";
+	}
 }
+require_once "mail.php";
 ?>
