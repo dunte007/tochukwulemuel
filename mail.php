@@ -7,10 +7,10 @@ if(!empty($_POST["send"])) {
 
 	$toEmail = "dunte007@gmail.com";
 	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
-	if(mail($toEmail, $subject, $content, $mailHeaders)) {
+	if(mail($toEmail, $tel, $message, $mailHeaders)) {
 	    $message = "Your contact information is received successfully.";
 	    $type = "success";
 	}
 }
-require_once "mail.php";
+
 ?>
