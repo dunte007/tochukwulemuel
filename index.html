@@ -141,34 +141,22 @@
                       <span id="close-btn">×</span>
                       
                       <fieldset>
-                            <input name="name" placeholder="Name" type="text" required /><br/>
+                            <input name="name" placeholder="Your Name" type="text" required /><br/>
                         </fieldset>
                     <fieldset>   
-                        <input name="email" placeholder="Email" type="email" required /><br/>
+                        <input name="email" placeholder="Your Email" type="email" required /><br/>
                     </fieldset>
                 <fieldset>
-                        <input type="tel" placeholder="Tel" type="number"><br/>
+                        <input type="tel" placeholder="Your Phone Number" type="number"><br/>
                     </fieldset>
                 <fieldset>
-                   <textarea name="message" placeholder="Message" required ></textarea>
+                   <textarea name="message" placeholder="Your Message" required ></textarea>
                 </fieldset>
             <fieldset>
-                   <input type="submit" value="SUBMIT" class="submit" />
-                        </fieldset>
-
-                        <?php
-                        if (! empty($message)) {
-                            ?>
-                            <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
-                        <?php
-                        }
-                        ?>
-                    </div>
-            </div>
-    </div>                   
-</form>
-                    </div>
-                </div>
+                <button name="submitted" id="contact-submit">SUBMIT</button>
+                   </fieldset>
+                 </form>
+               </div>        
             </div>
             <div class="contact-modal-open-btn">
                     <h2>Contact me.</h2>
