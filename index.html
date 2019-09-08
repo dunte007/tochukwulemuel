@@ -125,7 +125,7 @@
     
     <div id="modal-with-form" class="contact-modal hide-modal">
             <div class="container">  
-                    <form id="contact-form" action="mail.php" method="POST" onsubmit="return validateForm();" enctype="multipart/form-data">
+                    <form id="contact-form" action="" method="POST" onsubmit="return validateForm();" enctype="multipart/form-data">
                       <h3>To reach me.</h3>
                       <h4>Fill this form and get reply within 24 hours! Thank You</h4>
                       <span id="close-btn">×</span>
@@ -145,7 +145,18 @@
             <fieldset>
                    <input type="submit" value="SUBMIT" class="submit" />
                         </fieldset>
-                        </form>
+
+                        <?php
+                        if (! empty($message)) {
+                            ?>
+                            <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
+                        <?php
+                        }
+                        ?>
+                    </div>
+            </div>
+    </div>                   
+</form>
                     </div>
                 </div>
             </div>
