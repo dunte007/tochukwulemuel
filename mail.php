@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+ <body>
+
 <?php
 if(!empty($_POST["send"])) {
 	$name = $_POST["userName"];
@@ -12,5 +15,7 @@ if(!empty($_POST["send"])) {
 	    $type = "success";
 	}
 }
-
+ 
 ?>
+</body>
+</html>
